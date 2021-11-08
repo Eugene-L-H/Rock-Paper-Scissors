@@ -4,8 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
-    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title id="title">Rock Paper Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header">
+        <div class="games hidden">
+          <h2>Player:&nbsp;<span class="score">&nbsp;0</span></h2>
+        </div>
+        <div class="title">
+          <h1>
+            <span class="rock">Rock</span>&nbsp;<span class="paper">Paper</span
+            >&nbsp; <span class="scissors">Scissors</span>
+          </h1>
+        </div>
+        <div class="cpu-games hidden">
+          <h2>CPU:&nbsp;<span class="cpu-score">&nbsp;0</span></h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="gameplay" class="hidden">
+        <img src="icons/rock.png" id="rock" alt="rock" />
+        <img src="icons/paper.png" id="paper" alt="paper" />
+        <img src="icons/scissors.png" id="scissors" alt="scissors" />
+      </div>
+      <div id="press-play">
+        <button>PLAY</button>
+      </div>
+      <div class="cpu-gameplay">
+        <img class="rock hidden" src="icons/rock(flip).png" alt="rock" />
+        <img class="paper hidden" src="icons/paper(flip).png" alt="paper" />
+        <img
+          class="scissors hidden"
+          src="icons/scissors(flip).png"
+          alt="scissors"
+        />
+      </div>
+    </main>
+  </body>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/script.js" defer></script>
 </html>

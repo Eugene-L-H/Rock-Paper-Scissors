@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+}
+
+body {
+  /* image from wallpaperaccess.com */
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #32b4e5;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.title {
+  margin: 0 150px;
+}
+
+.title h1 {
+  display: flex;
+  gap: 10px;
+}
+
+.paper {
+  padding-bottom: 3px;
+  border-bottom: whitesmoke solid 1px;
+}
+
+.games,
+.cpu-games {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.games {
+  margin-left: 12.5%;
+}
+
+.cpu-games {
+  margin-right: 12.5%;
+}
+
+.score,
+.cpu-score {
+  font-size: 45px;
+  color: lightcoral;
+}
+
+.cpu-score {
+  color: purple;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 36px;
+}
+
+h1 .rock {
+  font-weight: 900;
+  color: #555;
+}
+
+h1 .paper {
+  font-weight: 300;
+  color: #ddd;
+}
+
+h1 .scissors {
+  font-weight: 400;
+  font-style: italic;
+  color: #575e5f;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#press-play {
+  position: absolute;
+}
+
+#press-play button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 16px;
+  background-color: darksalmon;
+  color: white;
+  border: solid black 2px;
+  border-radius: 30px;
+}
+
+#press-play button:hover {
+  transform: scale(1.1);
+}
+
+#press-play p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
+  font-style: italic;
+  color: crimson;
+}
+
+#press-play .question {
+  font-size: 24px;
+  color: black;
+}
+
+#press-play .game-text {
+  font-size: 24px;
+  color: black;
+}
+
+.game-text u {
+  color: darkmagenta;
+}
+
+#press-play .game-text .win {
+  color: darkmagenta;
+}
+
+#press-play .game-text .lose {
+  color: yellow;
+}
+
+#press-play .tie {
+  font-size: 24px;
+  color: black;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#gameplay {
+  margin-right: 10%;
+}
+
+.cpu-gameplay {
+  margin-left: 10%;
+}
+
+#gameplay,
+.cpu-gameplay {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 28px;
+}
+
+#gameplay img,
+.cpu-gameplay img {
+  height: 100px;
+  width: 100px;
+  border: solid black 3px;
+  border-radius: 40px;
+}
+
+#gameplay img:hover {
+  position: relative;
+  transform: scale(1.25);
+  right: -20px;
+}
+
+img#rock {
+  transform: rotate(45deg);
+}
+
+img#rock:hover {
+  transform: scale(1.25) rotate(45deg);
+}
+/* #rock,
+img.rock {
+  transform: rotate(45deg);
+} */
+
+.cpu-gameplay .rock {
+  transform: rotate(-45deg);
+}
+
+.no-pointers {
+  pointer-events: none;
+}

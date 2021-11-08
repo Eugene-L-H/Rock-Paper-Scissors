@@ -15,7 +15,7 @@ body {
   height: 100px;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 3.9%;
 }
 
 .title {
@@ -48,7 +48,9 @@ body {
 
 .score,
 .cpu-score {
-  font-size: 45px;
+  font-size: 60px;
+  text-shadow: #000 2px 1px 1px;
+  -webkit-font-smoothing: antialiased;
   color: lightcoral;
 }
 
@@ -180,10 +182,6 @@ img#rock {
 img#rock:hover {
   transform: scale(1.25) rotate(45deg);
 }
-/* #rock,
-img.rock {
-  transform: rotate(45deg);
-} */
 
 .cpu-gameplay .rock {
   transform: rotate(-45deg);
@@ -191,4 +189,21 @@ img.rock {
 
 .no-pointers {
   pointer-events: none;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  align-self: center;
+  margin-bottom: 30px;
+  margin-top: auto;
+}
+
+footer .signature {
+  font-style: italic;
 }

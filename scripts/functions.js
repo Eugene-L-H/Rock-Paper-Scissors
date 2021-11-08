@@ -56,6 +56,7 @@ function playGame(playerSelection) {
   let round = choices(playerSelection, cpuChoice);
 
   if (round == 2) {
+    // Player wins round
     playerScore++;
     if (playerSelection == "rock") {
       play.innerHTML =
@@ -67,6 +68,7 @@ function playGame(playerSelection) {
       play.innerHTML =
         '<p class="game-text"><u><span class="win">Win!</span></u> Scissors cuts paper.</p>';
     }
+    // Computer wins round
   } else if (round == 1) {
     cpuScore++;
     if (playerSelection == "rock") {
@@ -120,6 +122,7 @@ function playGame(playerSelection) {
       gameplay.classList.remove("no-pointers");
       // Reset screen to original UI.
       play.innerHTML = "<button>PLAY</button>";
+      play.classList.remove("no-pointers");
       play.classList.remove("hidden");
       header.classList.remove("hidden");
     }, 5500);

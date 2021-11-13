@@ -89,7 +89,7 @@ function playGame(playerSelection) {
   updateScore();
 
   // End game if 3 wins are accumulated by player or CPU.
-  if (playerScore == 3 || cpuScore == 3) {
+  if (playerScore == 5 || cpuScore == 5) {
     // Make "PLAY" button clickable again.
     play.classList.remove("no-pointers");
 
@@ -161,7 +161,7 @@ function updateScore() {
 }
 
 function time() {
-  play.innerHTML = "<p>Best <i>3</i> out of <i>5</i>!</p>";
+  play.innerHTML = "<p>First to <i>5</i>!";
   setTimeout(() => {
     play.innerHTML = '<p class="question">Rock, Paper or Scissors?</p>';
   }, 1500);

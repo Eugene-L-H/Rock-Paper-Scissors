@@ -29,7 +29,7 @@ scissors.addEventListener("click", () => {
 
 play.addEventListener("click", () => {
   play.classList.add("no-pointers");
-  if (playerScore != 3 && cpuScore != 3) {
+  if (playerScore != 5 && cpuScore != 5) {
     time();
   }
 });

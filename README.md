@@ -1,4 +1,4 @@
-# Countdown
+# Rock, Paper, Scissors
 Simple rock, paper, scissors game with JS interface.
 
 # Description
